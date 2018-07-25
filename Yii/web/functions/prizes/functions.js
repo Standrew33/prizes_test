@@ -1,7 +1,7 @@
 //Get prize
 function getPrize(callback) {
     $.ajax({
-        url: '../../../back/controllers/prizeController.php?GetPrize',
+        url: '../../../Yii/controllers/prizeController.php?GetPrize',
         type: 'GET',
         async: true,
         success: function (data) {
@@ -10,10 +10,22 @@ function getPrize(callback) {
     });
 }
 
+//Convert money to bonus
+function convertMoney(money, coef, callback) {
+    $.ajax({
+        url: '../../../Yii/controllers/prizeController.php?money=' + money + "&coef=" + coef,
+        type: 'GET',
+        async: true,
+        success: function (data) {
+            callback(data);
+        }
+    });
+}
+
 //Post prize
 function sendPrize(prizeObject, callback) {
     $.ajax({
-        url: '../../../back/controllers/prizeController.php',
+        url: '../../../Yii/controllers/prizeController.php',
         type: 'POST',
         data:{'post': prizeObject},
         async: true,
@@ -26,7 +38,7 @@ function sendPrize(prizeObject, callback) {
 //Refuse prize
 function refusePrize(type, prize, callback) {
     $.ajax({
-        url: '../../../back/controllers/prizeController.php',
+        url: '../../../Yii/controllers/prizeController.php',
         type: 'POST',
         data:{'ref':'true', 'type': type, 'prize': prize},
         async: true,

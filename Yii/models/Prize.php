@@ -1,4 +1,6 @@
 <?php
+include_once 'dbConnect.php';
+
     class Prize {
 
         //Get prize
@@ -8,43 +10,59 @@
 
             switch ($numPrize) {
                 case 1:
-                    $handle = fopen("../../data/moneyPrize.txt", 'r');
-                    $interval = explode(" ", fgets($handle));
-                    fclose($handle);
-                    $moneyPrize = rand($interval[1], $interval[2]);
+                    $mysqliWork = new dbConnect();
+                    $connect = $mysqliWork->openConnection();
 
-                    if ($interval[0] - $moneyPrize < 0)
+                    $result = $connect->query("SELECT * FROM t_money");
+                    $row = $result->fetch_assoc();
+
+                    $moneyPrize = rand($row['minInterval'], $row['maxInterval']);
+
+                    if ($row['total'] - $moneyPrize < 0)
                     {
-                        $moneyPrize = $interval[0];
-                        $interval[0] = 0;
+                        $moneyPrize = $row['total'];
+                        $row['total'] = 0;
                     }
-                    else $interval[0] = $interval[0] - $moneyPrize;
+                    else $row['total'] -= $moneyPrize;
 
-                    file_put_contents("../../data/moneyPrize.txt", implode(" ", $interval));
+                    $result = $connect->query("UPDATE t_money SET total = '$row[total]'");
+                    $mysqliWork->closeConnection();
 
                     return json_encode((object) ['prize' => $moneyPrize,
                                      'type' => 1]);
                     break;
                 case 2:
-                    $interval = file("../../data/bonusPrize.txt", FILE_IGNORE_NEW_LINES);
-                    return json_encode((object) ['prize' => rand($interval[0], $interval[1]),
+                    $mysqliWork = new dbConnect();
+                    $connect = $mysqliWork->openConnection();
+
+                    $result = $connect->query("SELECT * FROM t_bonus");
+                    $row = $result->fetch_assoc();
+
+                    $mysqliWork->closeConnection();
+                    return json_encode((object) ['prize' => rand($row['minInterval'], $row['maxInterval']),
                                      'type' => 2]);
                     break;
                 case 3:
-                    $handle = fopen("../../data/objectPrize.txt", 'r');
-                    $listObject = explode(" ", fgets($handle));
-                    fclose($handle);
+                    $listObject = null;
+                    $mysqliWork = new dbConnect();
+                    $connect = $mysqliWork->openConnection();
+
+                    $result = $connect->query("SELECT * FROM t_subject");
+                    while($row = $result->fetch_assoc()) {
+                        $listObject[] = $row;
+                    }
 
                     if (count($listObject) != 0)
                     {
                         $index = rand(0, count($listObject) - 1);
-                        $objectPrize = $listObject[$index];
+                        $id = $listObject[$index]['id'];
+                        $objectPrize = $listObject[$index]['object'];
 
-                        array_splice($listObject, $index, 1);
-                        file_put_contents("../../data/objectPrize.txt", implode(" ", $listObject));
+                        $result = $connect->query("DELETE FROM t_subject WHERE id = '$id'");
+                        $mysqliWork->closeConnection();
 
                         return json_encode((object) ['prize' => $objectPrize,
-                                         'type' => 3]);
+                                         'type' => 3, 'index' => $listObject[$index]['id']]);
                     }
                     else return null;
 
@@ -96,23 +114,36 @@
         function refusePrize($type, $prize) {
             switch ($type) {
                 case 1:
-                    $handle = fopen("../../data/moneyPrize.txt", 'r');
-                    $interval = explode(" ", fgets($handle));
-                    fclose($handle);
+                    $mysqliWork = new dbConnect();
+                    $connect = $mysqliWork->openConnection();
 
-                    $interval[0] = $interval[0] + $prize;
-                    file_put_contents("../../data/moneyPrize.txt", implode(" ", $interval));
+                    $result = $connect->query("SELECT * FROM t_money");
+                    $row = $result->fetch_assoc();
+
+                    $row['total'] += $prize;
+
+                    $result = $connect->query("UPDATE t_money SET total = '$row[total]'");
+                    $mysqliWork->closeConnection();
 
                     return true;
                     break;
                 case 3:
-                    file_put_contents("../../data/objectPrize.txt", " " .$prize, FILE_APPEND);
+                    $mysqliWork = new dbConnect();
+                    $connect = $mysqliWork->openConnection();
+                    $result = $connect->query("INSERT INTO t_subject (object) VALUES ('$prize')");
+                    $mysqliWork->closeConnection();
 
                     return true;
                     break;
                 default:
                     return null;
             }
+        }
+
+        //Convert money to bonus
+        function convertMoney($money, $coef)
+        {
+            return $money * $coef;
         }
     }
 

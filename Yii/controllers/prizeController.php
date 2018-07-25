@@ -15,6 +15,10 @@ if(isset($_POST['post'])) {
     echo $objPrize->SendPrize($_POST['post']);
 }
 
+if(isset($_GET['money'])) {
+    echo $objPrize->ConvertMoney($_GET['money'], $_GET['coef']);
+}
+
 class PrizeController {
 
     function GetPrize() {
@@ -30,6 +34,11 @@ class PrizeController {
     function SendPrize($prize) {
         $model = new Prize();
         return $model->sendPrize($prize);
+    }
+
+    function ConvertMoney($money, $coef) {
+        $model = new Prize();
+        return $model->convertMoney($money, $coef);
     }
 }
 ?>
