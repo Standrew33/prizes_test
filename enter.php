@@ -3,7 +3,7 @@
     
     if($_GET['action'] == "out")
         LogOut();
-            
+
     function Enter()
     {
         if ($_POST['login'] != "" && $_POST['password'] != "")
