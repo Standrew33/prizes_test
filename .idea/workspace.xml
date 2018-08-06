@@ -37,24 +37,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="122" column="35" lean-forward="true" selection-start-line="122" selection-start-column="35" selection-end-line="122" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="112" column="29" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/scriptProject/prizes/functions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+=======
       <file leaf-file-name="prizeController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Yii/controllers/prizeController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="478">
               <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+>>>>>>> master
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="prizeController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/back/controllers/prizeController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+=======
       <file leaf-file-name="Prize.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Yii/models/Prize.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="512">
               <caret line="130" column="50" lean-forward="true" selection-start-line="130" selection-start-column="50" selection-end-line="130" selection-end-column="50" />
+>>>>>>> master
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="Prize.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/back/models/Prize.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+=======
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Yii/views/site/index.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -63,6 +104,7 @@
               <folding>
                 <element signature="e#6#30#0#PHP" expanded="true" />
               </folding>
+>>>>>>> master
             </state>
           </provider>
         </entry>
@@ -89,6 +131,8 @@
         <option value="$PROJECT_DIR$/front/scriptProject/prizes/functions.js" />
         <option value="$PROJECT_DIR$/back/models/Prize.php" />
         <option value="$PROJECT_DIR$/index.php" />
+<<<<<<< HEAD
+=======
         <option value="$PROJECT_DIR$/Yii/functions/prizes/functions.js" />
         <option value="$PROJECT_DIR$/Yii/assets/AppAsset.php" />
         <option value="$PROJECT_DIR$/Yii/config/test.php" />
@@ -99,6 +143,7 @@
         <option value="$PROJECT_DIR$/Yii/models/Prize.php" />
         <option value="$PROJECT_DIR$/Yii/web/functions/prizes/functions.js" />
         <option value="$PROJECT_DIR$/Yii/views/site/index.php" />
+>>>>>>> master
       </list>
     </option>
   </component>
@@ -262,12 +307,19 @@
       <workItem from="1532444347359" duration="2230000" />
       <workItem from="1532446920034" duration="12914000" />
       <workItem from="1532487273811" duration="19887000" />
+<<<<<<< HEAD
+=======
       <workItem from="1532511619343" duration="37308000" />
+>>>>>>> master
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="43174000" />
+=======
     <option name="totallyTimeSpent" value="80482000" />
+>>>>>>> master
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
@@ -326,8 +378,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="323">
+          <caret line="19" column="68" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/scriptProject/prizes/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/controllers/prizeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/models/Prize.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="26" lean-forward="true" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/controllers/prizeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/models/Prize.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/scriptProject/prizes/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+=======
         <state relative-caret-position="17">
           <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
@@ -422,6 +535,14 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/function.php" />
+    <entry file="file://$PROJECT_DIR$/front/prize.php" />
+    <entry file="file://$PROJECT_DIR$/front/ajaxFunc.php" />
+    <entry file="file://$PROJECT_DIR$/front/ajaxFunc.js" />
+    <entry file="file://$PROJECT_DIR$/front/scriptProject/functions.js" />
+    <entry file="file://$PROJECT_DIR$/globFunction.php">
+=======
     <entry file="file://$PROJECT_DIR$/Yii/views/site/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -430,6 +551,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Yii/vendor/yiisoft/yii2/base/Controller.php">
+>>>>>>> master
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2485">
           <caret line="109" column="20" selection-start-line="109" selection-start-column="20" selection-end-line="109" selection-end-column="20" />
@@ -511,15 +633,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/front/scriptProject/prizes/functions.php" />
+    <entry file="file://$PROJECT_DIR$/front/scriptProject/prizes/prizeController.php" />
+    <entry file="file://$PROJECT_DIR$/enter.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="51">
+          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+=======
         <state relative-caret-position="289">
           <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/scriptProject/prizes/functions.js">
+    <entry file="file://$PROJECT_DIR$/../../../../tmazotProject/tmazot/ScriptsProject/Orders/functions.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="238">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+=======
         <state relative-caret-position="187">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
@@ -529,16 +662,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="20" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="20" />
+>>>>>>> master
           <folding>
             <element signature="e#35#43#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="112" column="29" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/scriptProject/prizes/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+=======
     <entry file="file://$PROJECT_DIR$/Yii/models/dbConnect.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
@@ -592,6 +740,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Yii/controllers/prizeController.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="104">
+          <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back/controllers/prizeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="122" column="35" lean-forward="true" selection-start-line="122" selection-start-column="35" selection-end-line="122" selection-end-column="35" />
+=======
         <state relative-caret-position="478">
           <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
         </state>
@@ -604,6 +770,7 @@
           <folding>
             <element signature="e#6#30#0#PHP" expanded="true" />
           </folding>
+>>>>>>> master
         </state>
       </provider>
     </entry>
